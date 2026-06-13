@@ -1,0 +1,147 @@
+Folder PATH listing for volume Acer
+Volume serial number is B285-D27C
+C:\USERS\ABHAY\FRONTEND\FRONTEND\SRC
+¦   App.css
+¦   App.jsx
+¦   index.css
+¦   main.jsx
+¦   
++---admin
+¦       AddProduct.jsx
+¦       Analytics.jsx
+¦       Coupons.jsx
+¦       Dashboard.jsx
+¦       EditProduct.jsx
+¦       ManageOrders.jsx
+¦       ManageProducts.jsx
+¦       ManageUsers.jsx
+¦       Reviews.jsx
+¦       
++---api
+¦       axios.js
+¦       endpoints.js
+¦       
++---assets
+¦   +---animations
+¦   +---categories
+¦   +---hero
+¦   +---icons
+¦   +---testimonials
++---components
+¦       AdminSidebar.jsx
+¦       Breadcrumb.jsx
+¦       CartItem.jsx
+¦       CartSummary.jsx
+¦       CategoryCard.jsx
+¦       CheckoutForm.jsx
+¦       CouponBox.jsx
+¦       DarkModeToggle.jsx
+¦       EmptyState.jsx
+¦       FilterSidebar.jsx
+¦       Footer.css
+¦       Footer.jsx
+¦       Hero.jsx
+¦       ImageZoom.jsx
+¦       LoadingSkeleton.css
+¦       LoadingSkeleton.jsx
+¦       Navbar.css
+¦       Navbar.jsx
+¦       Newsletter.css
+¦       Newsletter.jsx
+¦       OrderTracker.jsx
+¦       Pagination.jsx
+¦       PaintingCard.css
+¦       PaintingCard.jsx
+¦       PaymentMethods.jsx
+¦       ProductGallery.jsx
+¦       ProtectedRoute.jsx
+¦       RatingStars.css
+¦       RatingStars.jsx
+¦       RecentlyViewed.jsx
+¦       RelatedProducts.jsx
+¦       ReviewCard.css
+¦       ReviewCard.jsx
+¦       SearchBar.jsx
+¦       SortDropdown.jsx
+¦       WishlistButton.jsx
+¦       
++---context
+¦       ThemeContext.jsx
+¦       
++---data
+¦       categories.js
+¦       faq.js
+¦       paintings.js
+¦       testimonials.js
+¦       
++---firebase
+¦       firebase.js
+¦       
++---hooks
+¦       useAuth.js
+¦       useCart.js
+¦       useProducts.js
+¦       useWishlist.js
+¦       
++---pages
+¦       About.css
+¦       About.jsx
+¦       Cart.css
+¦       Cart.jsx
+¦       Checkout.css
+¦       Checkout.jsx
+¦       Contact.css
+¦       Contact.jsx
+¦       Faq.css
+¦       FAQ.jsx
+¦       ForgotPassword.jsx
+¦       Home.css
+¦       Home.jsx
+¦       Legal.css
+¦       Login.jsx
+¦       NotFound.css
+¦       NotFound.jsx
+¦       Orderdetails.css
+¦       OrderDetails.jsx
+¦       Orders.css
+¦       Orders.jsx
+¦       Paintings.css
+¦       Paintings.jsx
+¦       PrivacyPolicy.jsx
+¦       Product.css
+¦       Product.jsx
+¦       Profile.css
+¦       Profile.jsx
+¦       Register.jsx
+¦       Shop.css
+¦       Shop.jsx
+¦       Signup.css
+¦       Signup.jsx
+¦       Terms.jsx
+¦       Wishlist.css
+¦       Wishlist.jsx
+¦       
++---redux
+¦       authSlice.js
+¦       cartSlice.js
+¦       orderSlice.js
+¦       productSlice.js
+¦       reviewSlice.js
+¦       store.js
+¦       wishlistSlice.js
+¦       
++---services
+¦       authService.js
+¦       couponService.js
+¦       orderService.js
+¦       paymentService.js
+¦       productService.js
+¦       reviewService.js
+¦       
++---utils
+        constants.js
+        currencyFormatter.js
+        helpers.js
+        shipping.js
+        validation.js
+        

@@ -1,0 +1,380 @@
+```css
+/* ==========================
+   SABHAYA ART - PREMIUM GALLERY
+========================== */
+
+.paintings-page{
+  max-width:1400px;
+  margin:0 auto;
+  padding:40px 24px 80px;
+  min-height:100vh;
+}
+
+/* HEADER */
+
+.paintings-header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.paintings-header h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,6vw,5rem);
+  color:var(--gold2);
+  margin-bottom:10px;
+}
+
+.paintings-header p{
+  color:var(--soft);
+  font-size:1rem;
+  letter-spacing:.08em;
+}
+
+/* FILTERS */
+
+.paintings-filters{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:40px;
+}
+
+.paintings-filters select{
+  background:rgba(255,255,255,.04);
+  backdrop-filter:blur(18px);
+  color:var(--gold2);
+
+  border:1px solid rgba(201,168,76,.15);
+
+  border-radius:14px;
+
+  padding:12px 18px;
+
+  font-family:'Outfit',sans-serif;
+
+  transition:.3s;
+}
+
+.paintings-filters select:hover{
+  border-color:var(--gold);
+}
+
+.paintings-filters select:focus{
+  outline:none;
+  border-color:var(--gold2);
+}
+
+/* GRID */
+
+.paintings-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fill,minmax(290px,1fr));
+
+  gap:30px;
+}
+
+/* CARD */
+
+.painting-card{
+  position:relative;
+
+  background:rgba(255,255,255,.03);
+
+  backdrop-filter:blur(18px);
+
+  border:1px solid rgba(201,168,76,.08);
+
+  border-radius:24px;
+
+  overflow:hidden;
+
+  transition:.45s;
+
+  box-shadow:
+  0 8px 30px rgba(0,0,0,.25);
+}
+
+.painting-card:hover{
+  transform:translateY(-10px);
+
+  border-color:rgba(201,168,76,.25);
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.4),
+  0 0 30px rgba(201,168,76,.08);
+}
+
+/* IMAGE */
+
+.painting-img-wrap{
+  display:block;
+  aspect-ratio:1;
+  overflow:hidden;
+  position:relative;
+}
+
+.painting-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+  transition:transform .7s ease;
+}
+
+.painting-card:hover .painting-img{
+  transform:scale(1.08);
+}
+
+/* OVERLAY */
+
+.painting-img-wrap::after{
+  content:'';
+
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+  to top,
+  rgba(5,7,13,.55),
+  transparent 60%);
+
+  opacity:0;
+
+  transition:.4s;
+}
+
+.painting-card:hover .painting-img-wrap::after{
+  opacity:1;
+}
+
+/* BADGE */
+
+.painting-badge{
+  position:absolute;
+  top:16px;
+  left:16px;
+
+  background:
+  linear-gradient(
+  135deg,
+  var(--gold),
+  var(--gold2));
+
+  color:#05070d;
+
+  font-size:.72rem;
+  font-weight:700;
+
+  padding:8px 12px;
+
+  border-radius:999px;
+
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  z-index:3;
+}
+
+/* WISHLIST */
+
+.painting-wishlist{
+  position:absolute;
+
+  top:16px;
+  right:16px;
+
+  width:44px;
+  height:44px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:
+  rgba(5,7,13,.7);
+
+  backdrop-filter:blur(12px);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:5;
+
+  transition:.3s;
+}
+
+.painting-wishlist:hover{
+  transform:scale(1.12);
+}
+
+.painting-wishlist--active{
+  box-shadow:
+  0 0 20px rgba(201,168,76,.35);
+}
+
+/* INFO */
+
+.painting-info{
+  padding:20px;
+}
+
+.painting-name{
+  display:block;
+
+  font-family:
+  'Cormorant Garamond',
+  serif;
+
+  font-size:1.4rem;
+
+  color:var(--white);
+
+  margin-bottom:8px;
+
+  transition:.3s;
+}
+
+.painting-name:hover{
+  color:var(--gold2);
+}
+
+.painting-meta{
+  color:var(--soft);
+
+  font-size:.85rem;
+
+  margin-bottom:12px;
+}
+
+.painting-price{
+  color:var(--gold2);
+
+  font-size:1.2rem;
+
+  font-weight:700;
+}
+
+/* LOADER */
+
+.paintings-loading{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:400px;
+}
+
+.paintings-spinner{
+  width:55px;
+  height:55px;
+
+  border-radius:50%;
+
+  border:4px solid rgba(201,168,76,.1);
+
+  border-top-color:var(--gold);
+
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+/* EMPTY */
+
+.paintings-empty{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.paintings-empty button{
+  margin-top:20px;
+
+  padding:12px 24px;
+
+  border:none;
+
+  border-radius:999px;
+
+  background:
+  linear-gradient(
+  135deg,
+  var(--gold),
+  var(--gold2));
+
+  color:#05070d;
+
+  font-weight:600;
+}
+
+/* PAGINATION */
+
+.paintings-pagination{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+
+  margin-top:60px;
+}
+
+.paintings-pagination button{
+  width:42px;
+  height:42px;
+
+  border-radius:12px;
+
+  border:1px solid rgba(201,168,76,.15);
+
+  background:
+  rgba(255,255,255,.03);
+
+  color:var(--soft);
+
+  transition:.3s;
+}
+
+.paintings-pagination button:hover{
+  border-color:var(--gold);
+  color:var(--gold2);
+}
+
+.paintings-pagination button.active{
+  background:
+  linear-gradient(
+  135deg,
+  var(--gold),
+  var(--gold2));
+
+  color:#05070d;
+
+  border-color:var(--gold);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .paintings-page{
+    padding:24px 16px 60px;
+  }
+
+  .paintings-grid{
+    grid-template-columns:1fr;
+  }
+
+  .paintings-filters{
+    flex-direction:column;
+  }
+
+  .paintings-filters select{
+    width:100%;
+  }
+
+}
+```

@@ -1,0 +1,408 @@
+/* =========================
+   SABHAYA ART PREMIUM SHOP
+========================= */
+
+.shop-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+/* =========================
+   FILTER BAR
+========================= */
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  padding: 18px;
+
+  margin-bottom: 30px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.filter-toggle-btn {
+  background: rgba(212, 175, 55, 0.08);
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  color: #d4af37;
+
+  padding: 10px 16px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.filter-toggle-btn:hover {
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.filter-sep {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   CATEGORY PILLS
+========================= */
+
+.fpill {
+  background: rgba(212, 175, 55, 0.08);
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  color: #d4af37;
+
+  padding: 9px 16px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.fpill:hover {
+  transform: translateY(-2px);
+
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.fpill.active {
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #f7d774
+  );
+
+  color: #000;
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.35);
+}
+
+/* =========================
+   SORT SELECT
+========================= */
+
+.sort-select {
+  background: #111827;
+
+  color: #d4af37;
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  border-radius: 10px;
+
+  padding: 10px 14px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.sort-select option {
+  background: #111827;
+  color: #d4af37;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.shop-body {
+  display: flex;
+  gap: 30px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.shop-sidebar {
+  width: 290px;
+  flex-shrink: 0;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.shop-sidebar.collapsed {
+  display: none;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-label {
+  display: block;
+
+  color: #d4af37;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.sidebar-divider {
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  margin: 25px 0;
+}
+
+/* =========================
+   CATEGORY LIST
+========================= */
+
+.nav-item {
+  width: 100%;
+
+  text-align: left;
+
+  background: transparent;
+
+  border: none;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  padding: 12px 14px;
+
+  margin-bottom: 8px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  font-size: 15px;
+}
+
+.nav-item:hover {
+  color: #d4af37;
+
+  background: rgba(212, 175, 55, 0.08);
+
+  transform: translateX(3px);
+}
+
+.nav-item.active {
+  color: #d4af37;
+
+  background: rgba(212, 175, 55, 0.12);
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.price-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.price-range {
+  width: 100%;
+  accent-color: #d4af37;
+}
+
+/* =========================
+   STYLE & SIZE PILLS
+========================= */
+
+.style-pills,
+.size-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.style-pill,
+.size-pill {
+  background: rgba(212, 175, 55, 0.08);
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  color: #d4af37;
+
+  padding: 8px 14px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.style-pill:hover,
+.size-pill:hover {
+  background: rgba(212, 175, 55, 0.15);
+
+  transform: translateY(-2px);
+}
+
+.style-pill.active,
+.size-pill.active {
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #f7d774
+  );
+
+  color: #000;
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.shop-main {
+  flex: 1;
+}
+
+.shop-results-header {
+  margin-bottom: 25px;
+}
+
+.results-count {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 15px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 28px;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.no-results {
+  text-align: center;
+
+  padding: 80px 20px;
+}
+
+.no-results span {
+  font-size: 50px;
+}
+
+.no-results h3 {
+  color: #d4af37;
+
+  margin: 15px 0;
+}
+
+.no-results button {
+  margin-top: 10px;
+
+  background: rgba(212, 175, 55, 0.12);
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  color: #d4af37;
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .shop-body {
+    flex-direction: column;
+  }
+
+  .filter-bar {
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fpill,
+  .sort-select {
+    flex-shrink: 0;
+  }
+
+  .shop-sidebar {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

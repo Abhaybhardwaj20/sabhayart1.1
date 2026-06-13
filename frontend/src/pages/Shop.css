@@ -1,0 +1,238 @@
+.shop-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+/* ===== Filter Bar ===== */
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.filter-sep {
+  width: 1px;
+  height: 30px;
+  background: rgba(255,255,255,0.1);
+}
+
+.filter-toggle-btn {
+  background: transparent;
+  border: 1px solid rgba(212,175,55,0.3);
+  color: #d4af37;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ===== Top Category Pills ===== */
+
+.fpill {
+  background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.25);
+  color: #d4af37;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all .3s ease;
+}
+
+.fpill:hover {
+  background: rgba(212,175,55,0.15);
+}
+
+.fpill.active {
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #f5d76e
+  );
+  color: #000;
+}
+
+/* ===== Sort Dropdown ===== */
+
+.sort-select {
+  background: #111827;
+  color: #d4af37;
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.sort-select option {
+  background: #111827;
+  color: #d4af37;
+}
+
+/* ===== Layout ===== */
+
+.shop-body {
+  display: flex;
+  gap: 30px;
+}
+
+/* ===== Sidebar ===== */
+
+.shop-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.shop-sidebar.collapsed {
+  display: none;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-label {
+  display: block;
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 25px 0;
+}
+
+/* ===== Sidebar Category Buttons ===== */
+
+.nav-item {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  text-align: left;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 15px;
+}
+
+.nav-item:hover {
+  color: #d4af37;
+  background: rgba(212,175,55,0.08);
+}
+
+.nav-item.active {
+  color: #d4af37;
+  background: rgba(212,175,55,0.12);
+}
+
+/* ===== Price Range ===== */
+
+.price-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price-range {
+  width: 100%;
+}
+
+.range-wrap {
+  position: relative;
+}
+
+/* ===== Style Pills ===== */
+
+.style-pills,
+.size-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.style-pill,
+.size-pill {
+  background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.25);
+  color: #d4af37;
+  padding: 8px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.style-pill:hover,
+.size-pill:hover {
+  background: rgba(212,175,55,0.15);
+}
+
+/* ===== Main Area ===== */
+
+.shop-main {
+  flex: 1;
+}
+
+.shop-results-header {
+  margin-bottom: 20px;
+}
+
+.results-count {
+  color: rgba(255,255,255,0.7);
+}
+
+/* ===== Paintings Grid ===== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 25px;
+}
+
+/* ===== Empty State ===== */
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-results h3 {
+  color: #d4af37;
+  margin: 15px 0;
+}
+
+.no-results button {
+  background: none;
+  border: none;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+  .shop-body {
+    flex-direction: column;
+  }
+
+  .shop-sidebar {
+    width: 100%;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

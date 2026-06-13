@@ -1,0 +1,25 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+.stars-sm .star { font-size: 0.78rem; }
+.stars-md .star { font-size: 1rem; }
+.stars-lg .star { font-size: 1.2rem; }
+.star { color: var(--gold); }
+.star.empty { color: rgba(201,168,76,0.2); }
+.star.half { position: relative; color: rgba(201,168,76,0.2); }
+.star.half::after {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  width: 50%;
+  overflow: hidden;
+}
+.review-count {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-left: 6px;
+}
