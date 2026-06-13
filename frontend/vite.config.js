@@ -1,12 +1,14 @@
 // frontend/vite.config.js
-// Replace your existing vite.config.js with this
 
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  base: '/sabhayart1.1/',
+
   plugins: [react(), tailwindcss()],
+
   server: {
     port: 5173,
     proxy: {
